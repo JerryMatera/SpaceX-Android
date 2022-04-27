@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">SpaceX</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ship_img">Ship  Image</string>
+    <string name="ship_name">American Champion</string>
+    <string name="ship_depot">Home depot</string>
+
 </resources>
