@@ -1,6 +1,6 @@
 package io.github.jerrymatera.spacex.data.models
 
-data class SpaceShipItem(
+data class SpaceShip(
     val abs: Int,
     val active: Boolean,
     val image: String,
