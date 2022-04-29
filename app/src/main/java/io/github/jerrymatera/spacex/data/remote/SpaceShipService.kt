@@ -1,16 +1,17 @@
 package io.github.jerrymatera.spacex.data.remote
 
 import io.github.jerrymatera.spacex.data.models.SpaceShip
+import io.github.jerrymatera.spacex.utils.Resource
 import retrofit2.http.GET
 import retrofit2.http.Path
 
-interface ShipService {
+interface SpaceShipService {
 
     @GET("/ships")
-    suspend fun getShips(): List<SpaceShip>
+    suspend fun getSpaceShips(): Resource<List<SpaceShip>>
 
     @GET("/ships/{id}")
-    suspend fun getShipById(
+    suspend fun getSpaceShipById(
         @Path("id") id: String
-    ): SpaceShip
+    ): Resource<SpaceShip>
 }

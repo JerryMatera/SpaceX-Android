@@ -4,7 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.22780797101449277" />
-        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.11927083333333334" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_ship_modal_bottom_sheet.xml" value="0.11927083333333334" />
         <entry key="app/src/main/res/layout/space_ship_item.xml" value="0.25" />
       </map>

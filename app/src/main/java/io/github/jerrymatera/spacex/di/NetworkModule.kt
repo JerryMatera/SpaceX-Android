@@ -4,7 +4,7 @@ import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import io.github.jerrymatera.spacex.data.remote.ShipService
+import io.github.jerrymatera.spacex.data.remote.SpaceShipService
 import io.github.jerrymatera.spacex.utils.BASE_URL
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -39,6 +39,8 @@ object NetworkModule {
         .client(okHttpClient)
         .build()
 
-    fun provideShipService(retrofit: Retrofit): ShipService =
-        retrofit.create(ShipService::class.java)
+    @Singleton
+    @Provides
+    fun provideShipService(retrofit: Retrofit): SpaceShipService =
+        retrofit.create(SpaceShipService::class.java)
 }

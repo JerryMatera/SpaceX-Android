@@ -15,6 +15,7 @@
         android:orientation="horizontal">
 
         <ImageView
+            android:id="@+id/ship_img"
             android:layout_width="0dp"
             android:layout_height="150dp"
             android:layout_weight="1"
@@ -31,12 +32,13 @@
             android:paddingEnd="32dp">
 
             <TextView
+                android:id="@+id/ship_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 tools:text="@string/ship_name" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/ship_home_depot"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="8dp"
