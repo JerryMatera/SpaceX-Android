@@ -18,29 +18,7 @@ object NetworkModule {
 
     @Singleton
     @Provides
-    fun provideHttpLoggingInterceptor() = HttpLoggingInterceptor()
-        .apply {
-            level = HttpLoggingInterceptor.Level.BODY
-        }
-
-    @Singleton
-    @Provides
-    fun provideOkHttpClient(httpLoggingInterceptor: HttpLoggingInterceptor): OkHttpClient =
-        OkHttpClient
-            .Builder()
-            .addInterceptor(httpLoggingInterceptor)
-            .build()
-
-    @Singleton
-    @Provides
-    fun provideRetrofit(okHttpClient: OkHttpClient): Retrofit = Retrofit.Builder()
-        .addConverterFactory(GsonConverterFactory.create())
-        .baseUrl(BASE_URL)
-        .client(okHttpClient)
-        .build()
-
-    @Singleton
-    @Provides
-    fun provideShipService(retrofit: Retrofit): SpaceShipService =
-        retrofit.create(SpaceShipService::class.java)
+    fun provideSpaceShipService():SpaceShipService{
+       return SpaceShipService.create()
+    }
 }

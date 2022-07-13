@@ -1,6 +1,5 @@
 package io.github.jerrymatera.spacex.data.remote
 
-import androidx.lifecycle.LiveData
 import io.github.jerrymatera.spacex.data.models.SpaceShip
 import io.github.jerrymatera.spacex.utils.Resource
 import javax.inject.Inject
